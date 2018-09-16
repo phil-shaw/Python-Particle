@@ -15,7 +15,8 @@ class particle():
 
     def update(self):
 
-        self.xvel += random.randint(-1, 1)
+        if self.ypos <= 570:
+            self.xvel += random.randint(-1, 1)
 
         self.xpos += self.xvel
         self.ypos += self.yvel
