@@ -24,8 +24,8 @@ while 1:
         if event.type == pygame.QUIT:
             sys.exit()
 
-    for i in range(0, 20):
-        p = particle(X_SIZE / 2, Y_SIZE - 20)
+    for i in range(0, 5):
+        p = particle(X_SIZE / 2, Y_SIZE - 10)
         smoke.append(p)
 
     for p in smoke:
@@ -35,6 +35,6 @@ while 1:
         p.update()
         p.draw(surface)
 
-    clock.tick()
+    clock.tick(30)
     screen.blit(surface, (0,0))
     pygame.display.update()

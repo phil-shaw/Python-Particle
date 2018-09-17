@@ -2,6 +2,8 @@
 X_SIZE = 800
 Y_SIZE = 600
 
+PARTICLE_SIZE = 8
+
 # Colours
 BLACK = (0,0,0)
 WHITE = (255,255,255)

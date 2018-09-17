@@ -10,7 +10,7 @@ class particle():
         self.ypos = ypos
         self.xvel = random.randint(-1, 1)
         self.yvel = random.randint(-4, -2)
-        self.tone = 255
+        self.tone = random.randint(0, 255)
 
 
     def update(self):
@@ -29,5 +29,5 @@ class particle():
     def draw(self, surface):
         self.surface = surface
 
-        pygame.draw.circle(surface, (0, 0, 0, self.tone), (int(self.xpos), int(self.ypos)), 4)
+        pygame.draw.circle(surface, (0, 0, 0, self.tone), (int(self.xpos), int(self.ypos)), PARTICLE_SIZE)
 
